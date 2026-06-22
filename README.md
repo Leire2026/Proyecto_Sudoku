@@ -12,7 +12,7 @@ El proyecto se ha dividido en varias fases independientes para facilitar el desa
 La solución final se ha organizado como un pipeline compuesto por varios módulos:
 
 ```text
-Imagen de entrada
+Imagen de entrada 
 ↓
 Modelo YOLO para detectar el tablero
 ↓

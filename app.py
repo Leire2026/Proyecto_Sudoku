@@ -92,10 +92,10 @@ def resolver_con_modelo(matriz, modelo_solver):
     return solucion
 
 
-st.title("🧩 Solver de Sudoku desde imagen")
+st.title("🔢 Solver de Sudoku desde imagen")
 
 st.write(
-    "SUBE UNA IMGAGEN DE UN SUDOKU Y EL SISTEMA LO RESOLVERÁ....O MÁS BIEN NO"
+    "SUBE UNA IMGAGEN DE UN SUDOKU Y EL SISTEMA LO RESOLVERÁ....O MÁS BIEN NO 😎"
 )
 
 
@@ -177,5 +177,5 @@ if uploaded_file is not None:
                 modelo_solver
             )
 
-            st.subheader("Solución según el modelo... y ahora es cuando te ríes un rato")
+            st.subheader("Solución según el modelo... y ahora es cuando te ríes un rato 🤣")
             st.code(solucion_predicha, language="python")
