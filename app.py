@@ -95,7 +95,7 @@ def resolver_con_modelo(matriz, modelo_solver):
 st.title("🔢 Solver de Sudoku desde imagen")
 
 st.write(
-    "SUBE UNA IMGAGEN DE UN SUDOKU Y EL SISTEMA LO RESOLVERÁ....O MÁS BIEN NO 😎"
+    "SUBE UNA IMAGEN DE UN SUDOKU Y EL SISTEMA LO RESOLVERÁ....O MÁS BIEN NO 😎"
 )
 
 
