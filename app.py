@@ -78,16 +78,27 @@ def generar_matriz(cells, modelo_digitos):
 
 
 def resolver_con_modelo(matriz, modelo_solver):
-    sudoku = np.array(matriz).flatten()
+
+    # Guardamos la matriz original
+    sudoku_original = np.array(matriz)
+
+    # Preparamos la entrada para el modelo
+    sudoku = sudoku_original.flatten()
     sudoku = sudoku.astype("float32") / 9.0
 
+    # Predicción del modelo
     pred = modelo_solver.predict(
         sudoku.reshape(1, 81),
         verbose=0
     )
 
+    # Convertimos las probabilidades a números
     solucion = np.argmax(pred, axis=-1) + 1
     solucion = solucion.reshape(9, 9)
+
+    # Mantenemos los números originales
+    solucion[sudoku_original != 0] = \
+        sudoku_original[sudoku_original != 0]
 
     return solucion
 
