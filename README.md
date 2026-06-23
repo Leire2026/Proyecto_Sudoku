@@ -1,4 +1,5 @@
-# Proyecto Sudoku: Resolución Automática de Sudokus a partir de Imágenes
+# Proyecto Sudoku: 
+# Resolución Automática de Sudokus a partir de Imágenes
 
 ## Objetivo
 
